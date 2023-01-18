@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Apps from './assTodo';
+
 function App() {
   return (
    <>
-      <App></App>
+      <Apps></Apps>
    </>
   );
 }
