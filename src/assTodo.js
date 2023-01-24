@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-// import todoList from "./todoList";
+import "./AssToDo.css"
 
-const Apps = () => {
+import React, { useState } from "react";
+
+
+export default function Apps () {
 
   const [inputList, setInputList] = useState("")
   const [Items, setItems] = useState([])
@@ -23,17 +25,14 @@ const Apps = () => {
           <input type="text" placeholder='Add a item' value={inputList} onChange={itemEvent} />
 
           <button onClick={listOfItem}>ADD</button>
+          
           <ol>
-            {/* <li> {inputList}</li> */}
-
             {Items.map((intemval) => {
              return <todoList text={intemval} />
             })}
           </ol>
         </div>
-
       </div>
     </>
   )
 }
-export default Apps;
